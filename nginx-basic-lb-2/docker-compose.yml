@@ -18,7 +18,7 @@ services:
   nginx-app:
     image: nginx:alpine
     ports:
-      - "5014:5000"
+      - "5014:80"
 
   nginx-lb:
     build: ./nginx
