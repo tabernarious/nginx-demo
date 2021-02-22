@@ -5,7 +5,7 @@ These sites helped me get going:
 * https://towardsdatascience.com/sample-load-balancing-solution-with-docker-and-nginx-cf1ffc60e644
 * https://runnable.com/docker/python/docker-compose-with-flask-apps
 
-# How to Get Going
+# Quick Start
 
 ## Install Docker Engine (`docker-ce`, etc.)
 
@@ -38,6 +38,8 @@ Optional view the site from your browser:
 https://localhost:8083/ (if you're running Docker locally)
 
 https://DOCKER-HOST-IP:8083/ (if you're running Docker on a separate host/server)
+
+# Full Walkthrough
 
 ## Pick a directory to build In
 This will position you in your home directory:
