@@ -1,5 +1,5 @@
 from flask import Flask
-from flask import Redis
+from redis import Redis
 
 app = Flask(__name__)
 redis = Redis(host='redis', port=6379)
