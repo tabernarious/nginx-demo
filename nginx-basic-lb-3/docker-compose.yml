@@ -21,7 +21,7 @@ services:
   nginx-lb:
     build: ./nginx
     ports:
-      - "8081:80"
+      - "8083:80"
     depends_on:
       - app1
       - app2
