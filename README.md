@@ -29,15 +29,18 @@ sudo docker-compose down
 sudo docker-compose build
 sudo docker-compose up -d
 sudo docker-compose ps
+```
 
+Hit the load balancer from the Docker Host's CLI (try several times)
+```
 curl http://localhost:8083/
 ```
 
-Optional view the site from your browser:
+Hit the load balancer from a browser (locally or externally):
 
-https://localhost:8083/ (if you're running Docker locally)
+http://localhost:8083/ (if you're running Docker locally)
 
-https://DOCKER-HOST-IP:8083/ (if you're running Docker on a separate host/server)
+http://DOCKER-HOST-IP:8083/ (if you're running Docker on a separate host/server)
 
 # Full Walkthrough
 
