@@ -2,23 +2,23 @@ version: '3'
 services:
   app1:
     build: ./app1
-    ports:
-      - "5011:5000"
+#    ports:
+#      - "50:5000"
 
   app2:
     build: ./app2
-    ports:
-      - "5012:5000"
+#    ports:
+#      - "5012:5000"
 
   app3:
     build: ./app3
-    ports:
-      - "5013:5000"
+#    ports:
+#      - "5013:5000"
 
   nginx-app:
     image: nginx:alpine
-    ports:
-      - "5014:80"
+#    ports:
+#      - "5014:80"
 
   nginx-lb:
     build: ./nginx
