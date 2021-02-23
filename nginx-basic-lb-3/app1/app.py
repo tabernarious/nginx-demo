@@ -35,11 +35,11 @@ def fav():
   return send_from_directory(os.path.join(app.root_path, 'static'),'favicon.ico')
 
 @app.route('/favicon-16x16.png')
-def fav():
+def fav16():
   return send_from_directory(os.path.join(app.root_path, 'static'),'favicon-16x16.png')
 
 @app.route('/favicon-32x32.png')
-def fav():
+def fav32():
   return send_from_directory(os.path.join(app.root_path, 'static'),'favicon-32x32.png')
 
 if __name__ == '__main__':
