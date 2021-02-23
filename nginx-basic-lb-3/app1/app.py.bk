@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask
 from redis import Redis
 import time
 from datetime import datetime
@@ -23,12 +23,7 @@ def get_hit_count():
 def hello():
   count = get_hit_count()
   dateTimeUTC = datetime.now(tz=timezone.utc)
-  return render_template(
-      'app.html',
-      appname = "App1",
-      count = count,
-      dateTimeUTC = dateTimeUTC
-  )
+  return 'Hello! This is App1 :)<br><br>Viewed {} times!<br><br>{} UTC'.format(count, dateTimeUTC)
 
 if __name__ == '__main__':
   app.run(host='0.0.0.0', debug=True)
