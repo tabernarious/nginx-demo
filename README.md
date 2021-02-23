@@ -24,7 +24,7 @@ Run these after installing Docker Engine and Docker Compose
 ```
 cd ~
 git clone https://github.com/tabernarious/nginx-demo.git
-cd ~/nginx-basic-lb-3
+cd ~/nginx-demo/nginx-basic-lb-3
 sudo docker-compose down
 sudo docker-compose build
 sudo docker-compose up -d
