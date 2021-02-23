@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 from redis import Redis
 import time
+import os
 from datetime import datetime
 from datetime import timezone
 
@@ -29,6 +30,11 @@ def hello():
       count = count,
       dateTimeUTC = dateTimeUTC
   )
+
+@app.route('/favicon.ico')
+
+def fav():
+  return send_from_directory(os.path.join(app.root_path, 'static'),'favicon.ico')
 
 if __name__ == '__main__':
   app.run(host='0.0.0.0', debug=True)
