@@ -24,7 +24,7 @@ def hello():
   count = get_hit_count()
   dateTimeUTC = datetime.now(tz=timezone.utc)
   return render_template(
-      'app.html',
+      './app.html',
       appname = "App1",
       count = count,
       dateTimeUTC = dateTimeUTC
